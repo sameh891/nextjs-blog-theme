@@ -17,6 +17,14 @@ export default function Index({ posts, globalData }) {
         <h1 className="mb-12 text-3xl text-center lg:text-5xl">
           {globalData.blogTitle}
         </h1>
+        <div className="mb-8 text-center">
+          <Link
+            href="/scholar"
+            className="inline-block px-5 py-3 text-sm font-semibold text-white transition rounded-lg bg-gradient-3 hover:opacity-90"
+          >
+            Open Women&apos;s Health PT Scholar
+          </Link>
+        </div>
         <ul className="w-full">
           {posts.map((post) => (
             <li
