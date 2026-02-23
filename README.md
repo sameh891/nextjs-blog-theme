@@ -128,6 +128,26 @@ Here are a few suggestions on what to do next if you're new to Netlify Visual Ed
 - Learn [Netlify visual editor overview](https://docs.netlify.com/visual-editor/visual-editing/)
 - Check [Netlify visual editor reference documentation](https://visual-editor-reference.netlify.com/)
 
+
+## Women's Health Physical Therapy Scholar
+
+A new page is available at `/scholar` with:
+
+- Semantic Scholar research search (filters, sort by relevance/date/citations, open-access PDF links, abstracts).
+- Prioritization logic to boost Women's Health + Physical Therapy studies in results.
+- Groq-powered smart chat with model fallback:
+  - Primary: `llama-3.1-8b-instant`
+  - Fallback: `mixtral-8x7b-32768`
+
+Set these environment variables before running:
+
+| Variable | Description |
+| --- | --- |
+| `GROQ_API_KEY` | API key for Groq chat endpoint |
+| `SEMANTIC_SCHOLAR_API_KEY` | API key for Semantic Scholar Graph API |
+
+> Security note: keep API keys in environment variables only. Do not hardcode them in source files.
+
 ## Testing
 
 ### Included Default Testing
